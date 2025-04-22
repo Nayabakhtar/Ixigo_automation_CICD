@@ -1,4 +1,3 @@
-// This is an auto-inserted comment
 package pages;
 
 import java.time.Duration;
