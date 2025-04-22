@@ -65,7 +65,7 @@ public class ReviewPage {
        // Helper method to remove currency symbols, commas, etc.
     	private String normalizeAmount(String amount) {
     	    if (amount == null) return "";
-    	    return amount.replaceAll("[^\d]", ""); // Keep only digits
+    	    return amount.replaceAll("[^\\d]", ""); // Keep only digits
     	}
        
 }
