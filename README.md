@@ -2,33 +2,6 @@ Ixigo Automation Framework
 This is a hybrid test automation framework for Ixigo built using Selenium with Java, Cucumber BDD, JUnit, and Allure reporting. The framework is designed to automate the flight booking test cases and ensure high-quality software delivery.
 Project Structure
 The project is organized in the following structure:
-project-root/
-│
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       ├── pages/                       # Page Object Model (POM) classes for modular test design
-│   │       │   ├── FlightResultsPage.java   # Handles web elements and actions on the search results page
-│   │       │   ├── HomePage.java            # Represents the home page – includes methods to select cities, dates, etc.
-│   │       │   └── ReviewPage.java          # Interacts with the booking review page – validations, prices, etc.
-│   │       └── utils/                       # Utility classes shared across the framework
-│   │           └── DriverFactory.java       # Manages WebDriver instance creation & teardown (Browser factory pattern)
-│
-│   └── test/
-│       ├── java/
-│       │   ├── runners/
-│       │   │   └── TestRunner.java          # Cucumber test runner – integrates feature files and step definitions
-│       │   └── stepDefinitions/             
-│       │       └── StepDefinitions.java     # Glue code for feature steps – maps Gherkin steps to Java methods
-│       └── resources/
-│           ├── Feature/
-│           │   └── Ixigo_Flight_Booking.feature # Gherkin file – describes test scenarios in human-readable format
-│           └── allure.properties                # Allure configuration for customized reporting
-│
-├── target/
-│   ├── allure-results/                    # Stores test execution results for Allure reports
-│   ├── cucumber-reports/                 # Stores Cucumber HTML reports (if enabled)
-│   └── screenshots/                      # Captured screenshots on test failure or verification points
 
 Explanation of the Project Structure
 src/: Contains the main code for the framework as well as the test scripts.
