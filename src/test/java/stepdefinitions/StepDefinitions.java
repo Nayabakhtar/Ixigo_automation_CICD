@@ -1,3 +1,4 @@
+// This is an auto-inserted comment
 package stepdefinitions;
 
 import io.cucumber.java.After;

@@ -1,3 +1,4 @@
+# This is a Gherkin syntax comment
 Feature: Ixigo Flight Booking
 
   Scenario: Book a round trip with specific cities and passengers

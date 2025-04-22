@@ -1,3 +1,4 @@
+// This is an auto-inserted comment
 package pages;
 
 import java.io.File;
@@ -405,7 +406,7 @@ try {
    // Helper method to remove currency symbols, commas, etc.
 	private String normalizeAmount(String amount) {
 	    if (amount == null) return "";
-	    return amount.replaceAll("[^\\d]", ""); // Keep only digits
+	    return amount.replaceAll("[^\d]", ""); // Keep only digits
 	}
    
 
