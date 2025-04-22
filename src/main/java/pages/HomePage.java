@@ -1,4 +1,3 @@
-// This is an auto-inserted comment
 package pages;
 
 import java.io.File;
@@ -34,7 +33,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
     	 this.driver = driver;
-         this.wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+         this.wait = new WebDriverWait(driver, Duration.ofSeconds(80));
     }
 
  // locators for ixigo
@@ -74,15 +73,16 @@ public class HomePage {
     
     
     public void enterFromCity(String fromCity) {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
     // Click the 'From' field
     WebElement from = wait.until(ExpectedConditions.elementToBeClickable(fromField));
     from.click();
     }
+    
 // To field
     public void enterToCity(String toCity) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Actions actions = new Actions(driver);
 try {
@@ -406,7 +406,7 @@ try {
    // Helper method to remove currency symbols, commas, etc.
 	private String normalizeAmount(String amount) {
 	    if (amount == null) return "";
-	    return amount.replaceAll("[^\d]", ""); // Keep only digits
+	    return amount.replaceAll("[^\\d]", ""); // Keep only digits
 	}
    
 
